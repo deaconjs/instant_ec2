@@ -81,7 +81,7 @@ def provision_instance_from_ami(instance_name=current_instance_name, ami_id=CURR
         if sn.id == CURRENT_SUBNET:
             subnet = sn
     ec2_ephemeral_mappings = [{'DeviceName':'/dev/sdb', 'VirtualName':'ephemeral0'}]
-    node = conn.create_node(name=instance_name, image=runimage, size=runsize, assign_public_ip=assign_public_ip, ex_security_group_ids=[CURRENT_SECURITY_GROUP], ex_subnet=subnet, EC2_KEYNAME, ex_blockdevicemappings=ec2_ephemeral_mappings)
+    node = conn.create_node(name=instance_name, image=runimage, size=runsize, assign_public_ip=assign_public_ip, ex_security_group_ids=[CURRENT_SECURITY_GROUP], ex_subnet=subnet, ex_keyname=EC2_KEYNAME, ex_blockdevicemappings=ec2_ephemeral_mappings)
     env.nodes.append(node)
 
     conn.create_tags(node, {"Name":instance_name, "Owner":INSTANCE_OWNER})
