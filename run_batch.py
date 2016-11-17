@@ -1,5 +1,4 @@
 import boto
-import itmi_s3lib
 import os
 import datetime
 import time
