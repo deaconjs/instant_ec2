@@ -1,8 +1,8 @@
 # instant_ec2
 
-backing up a development version
-very beta right now
+backing up a development version, very beta right now
 
+set up your config.py and ami first. see the included script run_batch.py for cluster usage
 
 
 #      COMMAND-LINE DOC     #
