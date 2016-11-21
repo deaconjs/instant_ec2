@@ -383,9 +383,3 @@ def __run_command_on_all_servers(command):
     fabric.state.output['stdout'] = False
 
 
-def transfer_files(command_script):
-    commands = get_docker_clone_s3lib_repo_commands()
-    filename = command_script.split('/')[-1]
-    commands.append('mv %s itmi_s3lib; cd itmi_s3lib; python s3_transfer.py %s'%(filename, filename))
-    run_docker_image(commands, command_script)
-
