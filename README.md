@@ -9,9 +9,9 @@ set up your config.py and ami first. see the included script run_batch.py for cl
 
 ##BUILD SYSTEM OR CLUSTER
 
-build_instance: ebs_size=False, instance_size=None, spot=False, bid=None, ami=None, name=None, ephemeral=None, instance_commands=None, upload_key=None, upload_prefix=None
+build_instance: ebs_size=False, instance_size=None, spot=False, bid=None, ami=None, name=None, ephemeral=None, instance_commands=None, upload_key=None, upload_prefix=None, workflow=None
 
-run_cluster:    ebs_size=False, instance_size=None, spot=False, bid=None, ami=None, name=None, ephemeral=None, instance_commands=None, upload_key=None, upload_prefix=None
+run_cluster:    ebs_size=False, instance_size=None, spot=False, bid=None, ami=None, name=None, ephemeral=None, instance_commands=None, upload_key=None, upload_prefix=None, workflow=None
 
 ## FABRIC MONITORING
 
