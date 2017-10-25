@@ -1,7 +1,10 @@
 # instant_ec2
 
-set up your config.py and ami first. see the included script run_batch.py for cluster usage
+instant_ec2 is a Fabric-based package for managing remote EC2 instances. It automatically provisions spot instances, runs jobs at their command-line, and terminates the rentals upon completion. For cluster functionality, manager nodes are spun up for every e.g. fifty worker nodes to relieve network bandwith congestion. Submission scripts are hard-coded in instant_ec2, and a better solution will soon be available.
 
+set up your config.py, VPC, and AMIs first. see the included script run_batch.py for cluster usage
+
+apologies for the brief documentation. instant_ec2 has been tested extensively and works but you'll need to work with it to get it running
 
 #      COMMAND-LINE DOC     #
 
