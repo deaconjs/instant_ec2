@@ -4,7 +4,7 @@ instant_ec2 is a Fabric-based package for managing remote EC2 instances. It auto
 
 set up your config.py, VPC, and AMIs first. see the included script run_batch.py for cluster usage
 
-apologies for the brief documentation. instant_ec2 has been tested extensively and works but you'll need to work with it to get it running
+instant_ec2 has been tested extensively and works but you'll need to work with it to get it running
 
 #      COMMAND-LINE DOC     #
 
